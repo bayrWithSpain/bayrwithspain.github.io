@@ -8,6 +8,64 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #222; background: #fff; }
 
+    /* TOP CHANNEL BANNER */
+    .channel-banner {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background:
+        radial-gradient(ellipse 800px 200px at 20% 0%, rgba(255,255,255,0.7), transparent 60%),
+        repeating-linear-gradient(135deg, rgba(0,0,0,0.012) 0px, rgba(0,0,0,0.012) 1px, transparent 1px, transparent 3px),
+        linear-gradient(135deg, #f8f4ec 0%, #ece3d3 100%);
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      text-align: center;
+      padding: 24px 20px 22px;
+    }
+    .channel-banner .eyebrow {
+      font-size: 0.68em;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #a08f6f;
+      margin-bottom: 8px;
+    }
+    .channel-banner .headline {
+      font-size: 1.08em;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+      line-height: 1.45;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .channel-banner a.channel-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88em;
+      letter-spacing: 0.3px;
+      padding: 11px 26px;
+      border-radius: 30px;
+      transition: transform 0.15s, background 0.2s;
+    }
+    .channel-banner a.channel-btn:hover { background: #333; transform: translateY(-1px); }
+    .channel-banner .handle {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.78em;
+      color: #a08f6f;
+      letter-spacing: 0.3px;
+    }
+    @media (max-width: 600px) {
+      .channel-banner { padding: 20px 16px 18px; }
+      .channel-banner .headline { font-size: 0.98em; }
+    }
+
     /* HERO */
     .hero {
       background: #1a1a1a;
@@ -166,10 +224,17 @@
 </head>
 <body>
 
+<div class="channel-banner">
+  <div class="eyebrow">Telegram-канал бренда</div>
+  <div class="headline">Zara, Louis Vuitton, New Balance, Prada и другие бренды — новинки, цены и отзывы каждый день</div>
+  <a href="https://t.me/zaramassimoespana" class="channel-btn" target="_blank">✈️ Открыть Telegram-канал</a>
+  <span class="handle">t.me/zaramassimoespana</span>
+</div>
+
 <div class="hero">
   <h1>БАЙЕР-СЕРВИС</h1>
   <p>Профессиональный выкуп товаров из Испании, Португалии, Италии и Америки. Zara, Massimo Dutti, Mango и другие бренды — по эксклюзивным условиям.</p>
-  <a href="https://t.me/Anisyaabs" class="btn-primary" target="_blank">Заказать</a>
+  <a href="https://t.me/Anisyaabs" class="btn-primary" target="_blank">Спросить у байера</a>
 </div>
 
 <section class="services">
@@ -209,7 +274,7 @@
         <div class="step-num">1</div>
         <div class="step-text">
           <h3>Клиент оставляет заявку на выкуп</h3>
-          <p>Напишите нам в Telegram <a href="https://t.me/Anisyaabs" target="_blank">@Anisyaabs</a> / <a href="https://t.me/valeriya_vel" target="_blank">@valeriya_vel</a> или в WhatsApp — опишите, что хотите купить.</p>
+          <p>Напишите нам в Telegram <a href="https://t.me/Anisyaabs" target="_blank">@Anisyaabs</a> или в WhatsApp — опишите, что хотите купить.</p>
         </div>
       </div>
       <div class="step">
@@ -284,35 +349,24 @@
 <section class="payment" id="payment">
   <div class="container">
     <div class="section-title">Оплата вашего заказа</div>
-    <p>Для оплаты заказа, пожалуйста, свяжитесь с нами удобным способом — и мы вышлем вам ссылку на оплату.</p>
-    
-    <section class="payment" id="payment">
-  <div class="container">
-    <div class="section-title">Оплата вашего заказа</div>
     <p>Для оплаты заказа, пожалуйста, свяжитесь с одним из наших менеджеров:</p>
-<div class="contacts" style="display: flex; flex-direction: column; gap: 15px; align-items: center; margin-bottom: 25px;">
-    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+    <div class="contacts" style="display: flex; flex-direction: column; gap: 15px; align-items: center; margin-bottom: 25px;">
+      <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
         <a href="https://t.me/Anisyaabs" target="_blank" style="color: #fff !important; text-decoration: none;">✈️ Telegram @Anisyaabs</a>
         <a href="https://wa.me/34674059120" target="_blank" style="color: #fff !important; text-decoration: none;">💬 WhatsApp +34 674 05 91 20</a>
+      </div>
+      <a href="https://t.me/zaramassimoespana" target="_blank" style="color: #fff !important; text-decoration: none; font-weight: bold; margin-top: 10px; background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 5px;">📢 Канал t.me/zaramassimoespana</a>
     </div>
-
-    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-        <a href="https://t.me/valeriya_vel" target="_blank" style="color: #fff !important; text-decoration: none;">✈️ Telegram @valeriya_vel</a>
-        <a href="https://wa.me/79673668561" target="_blank" style="color: #fff !important; text-decoration: none;">💬 WhatsApp +7 967 366-85-61</a>
-    </div>
-
-    <a href="https://t.me/zaramassimoespana" target="_blank" style="color: #fff !important; text-decoration: none; font-weight: bold; margin-top: 10px; background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 5px;">📢 Канал t.me/zaramassimoespana</a>
-</div>
-  
-
-    <a href="https://t.me/Anisyaabs" class="btn-white" target="_blank">Заказать</a>
+    <a href="https://t.me/Anisyaabs" class="btn-white" target="_blank">Спросить у байера</a>
+  </div>
+</section>
 
 <footer>
   <div class="container">
     <div>Индивидуальный предприниматель</div>
     <div><strong style="color:#ccc;">Абсалямов Карим Фаритович</strong></div>
     <div>ОГРНИП 312169034500235 &nbsp;|&nbsp; ИНН 561202685632</div>
-  <div>Telegram: <a href="https://t.me/Anisyaabs">@Anisyaabs</a> &nbsp;|&nbsp; <a href="https://t.me/valeriya_vel">@valeriya_vel</a></div>
+  <div>Telegram: <a href="https://t.me/Anisyaabs">@Anisyaabs</a></div>
     
     <div class="footer-docs" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 900px; margin: 25px auto 0; padding: 0 15px; line-height: 1.5;">
       <a href="oferta_agent.pdf" target="_blank">📄 Оферта Агент ИП Абсалямов К.Ф.</a>
